@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Image URL to Hexadecimal Converter</h2>
+        <label for="imageUrl">Enter Image URL:</label>
+        <input type="text" id="imageUrl" placeholder="Enter image URL...">
+        <button onclick="convertToHex()">Convert</button>
+        <label for="hexData">Hexadecimal Data:</label>
+        <textarea id="hexData" readonly></textarea>
+        <button onclick="copyToClipboard()">Copy to Clipboard</button>
+        <button onclick="convertToImage()">Convert to Image</button>
+        <canvas id="canvas"></canvas>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
